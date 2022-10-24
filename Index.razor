@@ -1,0 +1,48 @@
+﻿@page "/"
+<PageTitle>Tarea Back y Front</PageTitle>
+    <h1>Formulario Empleados</h1>
+    <div class="container">
+<form class="d-flex" action="crud_Empleados.php" method="post">
+    <div class="col">
+    <div class="mb-3">
+            <label for="lbl_id" class="form-label"><b>ID</b></label>
+            <input type="txt" name="txt_id" id="txt_id" class="form-control" value="0" readonly>          
+        </div>
+        <div class="mb-3">
+            <label for="lbl_Nombre" class="form-label"><b>Nombre</b></label>
+            <input type="txt" name="txt_Nombre" id="txt_Nombre" class="form-control" placeholder="Nombre: " required>            
+        </div>
+        <div class="mb-3">
+            <label for="lbl_Apellido" class="form-label"><b>Apellido</b></label>
+            <input type="txt" name="txt_Apellido" id="txt_Apellido" class="form-control" placeholder="Apellido: " required>            
+        </div>
+        <div class="mb-3">
+            <label for="lbl_Direccion" class="form-label"><b>Direccion</b></label>
+            <input type="txt" name="txt_Direccion" id="txt_Direccion" class="form-control" placeholder="Direccion: #casa calle avenida lugar " required>            
+        </div>
+        <div class="mb-3">
+            <label for="lbl_Telefono" class="form-label"><b>Telefono</b></label>
+            <input type="number" name="txt_Telefono" id="txt_Telefono" class="form-control" placeholder="Telefono: ### " required>            
+        </div>
+        <div class="mb-3">
+          <label for="lbl_idPuesto" class="form-label"><b>Puesto</b></label>
+          <select class="form-select" name="drop_idPuesto" id="drop_Puesto">
+            <option value=0>--- Puesto ---</option>
+          </select>            
+        </div>
+        <div class="mb-3">
+            <label for="lbl_DPI" class="form-label"><b>DPI</b></label>
+            <input type="txt" name="txt_DPI" id="txt_DPI" class="form-control" placeholder="DPI ### " required>            
+        </div>
+        <div class="mb-3">
+            <label for="lbl_FechaNacimiento" class="form-label"><b>Fecha Nacimiento</b></label>
+            <input type="date" name="txt_FechaNacimiento" id="txt_FechaNacimiento" class="form-control" placeholder="FechaNacimiento" required>            
+        </div>    
+        <div class="mb-3">
+            <label for="lbl_FechaIngresoRegistro" class="form-label"><b>Fecha Ingreso Registro</b></label>
+            <input type="datetime" name="txt_FechaIngresoRegistro" id="txt_FechaIngresoRegistro" class="form-control" placeholder="FechaIngresoRegistro" required>            
+        </div>      
+    </div>
+</form>
+</div>
+ <Counter/>

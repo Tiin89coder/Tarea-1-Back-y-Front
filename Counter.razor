@@ -1,0 +1,14 @@
+﻿@page "/counter"
+
+<PageTitle>Tarea Back y Front</PageTitle>
+            <input type="submit" name="btn_Agregar" id="btn_Agregar" class="btn btn-primary" value="Agregar" onclick="location.href='Registros'">     
+            <input type="submit" name="btn_Modificar" id="btn_Modificar" class="btn btn-success" value="Modificar" onclick="location.href='Registros'">   
+            <input type="submit" name="btn_Eliminar" id="btn_Eliminar" class="btn btn-danger" value="Eliminar" onclick="location.href='Registros'">    
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
